@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Five short visual field guides to Ultraviolet, Shielded CSV, Taproot Assets, RGB, and Ultraviolet's measured performance."
+    />
+    <meta name="theme-color" content="#090611" />
+    <meta property="og:title" content="Ultraviolet — Field Notes" />
+    <meta
+      property="og:description"
+      content="Private assets on Bitcoin, explained in five short films."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/posters/ultraviolet-comparison.jpg" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="/styles.css" as="style" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Ultraviolet — Field Notes</title>
+  </head>
+  <body>
+    <div class="ambient ambient--one" aria-hidden="true"></div>
+    <div class="ambient ambient--two" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Ultraviolet Field Notes home">
+        <span class="brand__signal"></span>
+        <span>ULTRAVIOLET</span>
+        <span class="brand__muted">/ FIELD NOTES</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#films">Films</a>
+        <a href="#benchmark">Benchmark</a>
+        <a href="/github">Protocol</a>
+        <a class="nav__source" href="/source">Source ↗</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="hero__copy reveal">
+          <p class="eyebrow">A VISUAL FIELD GUIDE TO CLIENT-SIDE VALIDATION</p>
+          <h1>
+            Bitcoin sees the anchor.
+            <span>The receiver verifies the asset.</span>
+          </h1>
+          <p class="hero__lede">
+            Five short films compare the architectures, trace their proof
+            models, and put Ultraviolet’s measured performance on screen.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#watch">Watch the overview</a>
+            <a class="button button--ghost" href="#films">Explore the series</a>
+          </div>
+        </div>
+
+        <div class="hero__index reveal" aria-label="Series overview">
+          <span class="hero__number">05</span>
+          <div>
+            <strong>FILMS</strong>
+            <span>04:10 total runtime</span>
+          </div>
+          <div>
+            <strong>1080P</strong>
+            <span>30 frames per second</span>
+          </div>
+          <div>
+            <strong>OPEN</strong>
+            <span>Research in motion</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="watch" class="feature shell reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow eyebrow--uv">FIELD NOTE 01 / OVERVIEW</p>
+            <h2>Four architectures. One comparison.</h2>
+          </div>
+          <p>
+            Shielded CSV, Taproot Assets, RGB, and Ultraviolet—compared by
+            privacy, proof growth, Bitcoin footprint, and trust model.
+          </p>
+        </div>
+
+        <div class="player player--feature" data-player>
+          <video
+            controls
+            playsinline
+            preload="metadata"
+            poster="/posters/ultraviolet-comparison.jpg"
+            aria-label="Ultraviolet architecture comparison film"
+          >
+            <source
+              src="/videos/ultraviolet-comparison.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support HTML video.
+          </video>
+          <div class="player__badge"><span></span> 01:00</div>
+        </div>
+      </section>
+
+      <section id="films" class="films shell">
+        <div class="section-kicker reveal">
+          <p class="eyebrow">THE PROTOCOLS / ONE AT A TIME</p>
+          <span>02 — 04</span>
+        </div>
+
+        <article class="film film--shielded reveal">
+          <div class="film__copy">
+            <p class="eyebrow">FIELD NOTE 02 / SHIELDED CSV</p>
+            <h2>Private coins.<br />Public spend order.</h2>
+            <p>
+              The sender proves a valid private state transition, Bitcoin
+              orders the spend, and the receiver gets a fresh coin plus a
+              proof-carrying record.
+            </p>
+            <ul class="facts" aria-label="Shielded CSV key facts">
+              <li><span>64 B</span> on-chain footprint per transfer</li>
+              <li><span>O(1)</span> receiver-side validation</li>
+              <li><span>PCD</span> recursive proof-carrying data</li>
+            </ul>
+          </div>
+          <div class="player" data-player>
+            <video
+              controls
+              playsinline
+              preload="none"
+              poster="/posters/shielded-csv-explainer.jpg"
+              aria-label="Shielded client-side validation explainer"
+            >
+              <source
+                src="/videos/shielded-csv-explainer.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <div class="player__badge"><span></span> 00:45</div>
+          </div>
+        </article>
+
+        <article class="film film--taproot reveal">
+          <div class="film__copy">
+            <p class="eyebrow">FIELD NOTE 03 / TAPROOT ASSETS</p>
+            <h2>Assets inside<br />Taproot outputs.</h2>
+            <p>
+              Asset commitments live beneath a Taproot output. Proof files
+              move off-chain, trace lineage to genesis, and can travel over
+              Lightning.
+            </p>
+            <ul class="facts" aria-label="Taproot Assets key facts">
+              <li><span>UTXO</span> ownership and liveness</li>
+              <li><span>MS-SMT</span> asset commitments</li>
+              <li><span>LN</span> issued-asset channels</li>
+            </ul>
+          </div>
+          <div class="player" data-player>
+            <video
+              controls
+              playsinline
+              preload="none"
+              poster="/posters/taproot-assets-explainer.jpg"
+              aria-label="Taproot Assets explainer"
+            >
+              <source
+                src="/videos/taproot-assets-explainer.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <div class="player__badge"><span></span> 00:45</div>
+          </div>
+        </article>
+
+        <article class="film film--rgb reveal">
+          <div class="film__copy">
+            <p class="eyebrow">FIELD NOTE 04 / RGB</p>
+            <h2>Contract state<br />Bitcoin never sees.</h2>
+            <p>
+              A single-use seal ties contract rights to a Bitcoin outpoint.
+              The recipient receives a private consignment and replays the
+              relevant history.
+            </p>
+            <ul class="facts" aria-label="RGB key facts">
+              <li><span>SEAL</span> closes once on Bitcoin</li>
+              <li><span>CSV</span> client-side validation</li>
+              <li><span>LOCAL</span> contract state and history</li>
+            </ul>
+          </div>
+          <div class="player" data-player>
+            <video
+              controls
+              playsinline
+              preload="none"
+              poster="/posters/rgb-explainer.jpg"
+              aria-label="RGB protocol explainer"
+            >
+              <source src="/videos/rgb-explainer.mp4" type="video/mp4" />
+            </video>
+            <div class="player__badge"><span></span> 00:45</div>
+          </div>
+        </article>
+      </section>
+
+      <section id="benchmark" class="benchmark">
+        <div class="shell benchmark__inner">
+          <div class="benchmark__copy reveal">
+            <p class="eyebrow eyebrow--uv">FIELD NOTE 05 / MEASURED</p>
+            <h2>Proof generation at phone speed.</h2>
+            <p>
+              The reference circuit contains 1,024 rows and 457 columns.
+              Standard proofs complete in 70–84 ms on the measured laptop;
+              hiding proofs trade more time and memory for privacy.
+            </p>
+            <div class="metrics">
+              <div>
+                <span>0.070–0.084s</span>
+                <small>STANDARD PROVE</small>
+              </div>
+              <div>
+                <span>1.4ms</span>
+                <small>STANDARD VERIFY</small>
+              </div>
+              <div>
+                <span>158.3KB</span>
+                <small>STANDARD PROOF</small>
+              </div>
+            </div>
+            <p class="benchmark__note">
+              Measured CPU benchmarks. Research software; not audited.
+            </p>
+          </div>
+          <div class="player player--benchmark reveal" data-player>
+            <video
+              controls
+              playsinline
+              preload="none"
+              poster="/posters/ultraviolet-benchmarks.jpg"
+              aria-label="Ultraviolet benchmark film"
+            >
+              <source
+                src="/videos/ultraviolet-benchmarks.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <div class="player__badge"><span></span> 00:50</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing shell reveal">
+        <p class="eyebrow">THE DESIGN QUESTION</p>
+        <h2>
+          How much history should<br />
+          <span>a receiver have to carry?</span>
+        </h2>
+        <p>
+          Ultraviolet explores constant-size receive proofs for private
+          client-side validation on Bitcoin.
+        </p>
+        <div class="closing__actions">
+          <a class="button button--primary" href="/github">Read the protocol ↗</a>
+          <a class="button button--ghost" href="/source">View this site’s source ↗</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer shell">
+      <div class="brand">
+        <span class="brand__signal"></span>
+        <span>ULTRAVIOLET</span>
+      </div>
+      <p>Open research. Measured claims. <span id="year"></span></p>
+    </footer>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>

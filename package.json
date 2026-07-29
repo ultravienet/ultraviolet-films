@@ -1,0 +1,12 @@
+{
+  "name": "ultraviolet-films",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler pages dev public",
+    "deploy": "wrangler pages deploy public --project-name ultraviolet-films"
+  },
+  "devDependencies": {
+    "wrangler": "4.115.0"
+  }
+}
