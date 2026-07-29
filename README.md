@@ -13,7 +13,7 @@ Bitcoin:
 6. Formal verification, its trust boundary, and the Collatz/Lean incident
 
 The site is static and deploys to Cloudflare Pages. Videos are optimized H.264
-MP4 files and use native browser playback with HTTP range requests.
+MP4 files with fast-start metadata for progressive native browser playback.
 
 ## Local development
 
