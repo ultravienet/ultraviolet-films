@@ -1,6 +1,6 @@
 # Ultraviolet — Field Notes
 
-A public gallery for five Remotion films about client-side validation on
+A public gallery for six Remotion films about client-side validation on
 Bitcoin:
 
 **Live site:** [ultraviolet-films.pages.dev](https://ultraviolet-films.pages.dev/)
@@ -10,6 +10,7 @@ Bitcoin:
 3. Taproot Assets
 4. RGB
 5. Ultraviolet benchmarks
+6. Formal verification, its trust boundary, and the Collatz/Lean incident
 
 The site is static and deploys to Cloudflare Pages. Videos are optimized H.264
 MP4 files and use native browser playback with HTTP range requests.

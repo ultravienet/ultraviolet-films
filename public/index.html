@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Five short visual field guides to Ultraviolet, Shielded CSV, Taproot Assets, RGB, and Ultraviolet's measured performance."
+      content="Six short visual field guides to Ultraviolet, Shielded CSV, Taproot Assets, RGB, measured performance, and formal verification."
     />
     <meta name="theme-color" content="#090611" />
     <meta property="og:title" content="Ultraviolet — Field Notes" />
     <meta
       property="og:description"
-      content="Private assets on Bitcoin, explained in five short films."
+      content="Private assets on Bitcoin, explained in six short films."
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="/posters/ultraviolet-comparison.jpg" />
@@ -38,6 +38,7 @@
       <nav class="nav" aria-label="Primary navigation">
         <a href="#films">Films</a>
         <a href="#benchmark">Benchmark</a>
+        <a href="#formal">Formal</a>
         <a href="/github">Protocol</a>
         <a class="nav__source" href="/source">Source ↗</a>
       </nav>
@@ -52,8 +53,9 @@
             <span>The receiver verifies the asset.</span>
           </h1>
           <p class="hero__lede">
-            Five short films compare the architectures, trace their proof
-            models, and put Ultraviolet’s measured performance on screen.
+            Six short films compare the architectures, trace their proof
+            models, measure performance, and put formal verification inside
+            its proper trust boundary.
           </p>
           <div class="hero__actions">
             <a class="button button--primary" href="#watch">Watch the overview</a>
@@ -62,10 +64,10 @@
         </div>
 
         <div class="hero__index reveal" aria-label="Series overview">
-          <span class="hero__number">05</span>
+          <span class="hero__number">06</span>
           <div>
             <strong>FILMS</strong>
-            <span>04:05 total runtime</span>
+            <span>05:20 total runtime</span>
           </div>
           <div>
             <strong>1080P</strong>
@@ -250,6 +252,45 @@
               />
             </video>
             <div class="player__badge"><span></span> 00:50</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="formal" class="formal">
+        <div class="shell formal__inner">
+          <div class="formal__copy reveal">
+            <p class="eyebrow">FIELD NOTE 06 / FORMAL VERIFICATION</p>
+            <h2>The checker is part of the threat model.</h2>
+            <p>
+              Ultraviolet writes adversarial state models in Quint, checks
+              their invariants with Apalache, replays generated traces against
+              Rust, and applies Kani to selected production functions.
+            </p>
+            <p>
+              Then the July 2026 AI-assisted Collatz artifact shows the limit:
+              two checkers accepted it through two different bugs. A green
+              check proves only what the full toolchain actually checked.
+            </p>
+            <div class="formal__metrics" aria-label="Formal verification scope">
+              <div><span>7</span><small>MODEL FILES</small></div>
+              <div><span>38</span><small>MODEL CHECKS</small></div>
+              <div><span>3</span><small>VERIFICATION TIERS</small></div>
+            </div>
+          </div>
+          <div class="player player--formal reveal" data-player>
+            <video
+              controls
+              playsinline
+              preload="none"
+              poster="/posters/formal-verification-explainer.jpg"
+              aria-label="Ultraviolet formal verification explainer"
+            >
+              <source
+                src="/videos/formal-verification-explainer.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <div class="player__badge"><span></span> 01:15</div>
           </div>
         </div>
       </section>
