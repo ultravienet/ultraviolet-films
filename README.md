@@ -27,5 +27,5 @@ npm run dev
 npm run deploy
 ```
 
-Film source lives in
-[`ultravienet/ultraviolet`](https://github.com/ultravienet/ultraviolet/tree/main/remotion).
+Film source is tracked in
+[`ultravienet/ultraviolet` PR #16](https://github.com/ultravienet/ultraviolet/pull/16).
