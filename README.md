@@ -15,6 +15,10 @@ Bitcoin:
 The site is static and deploys to Cloudflare Pages. Videos are optimized H.264
 MP4 files with fast-start metadata for progressive native browser playback.
 
+The current release reflects proof-native anchor-preimage authorization, the
+distinction between Shielded CSV's application payload and its full Bitcoin
+transaction, and Ultraviolet's current 16-row benchmark cohort.
+
 ## Local development
 
 ```sh
